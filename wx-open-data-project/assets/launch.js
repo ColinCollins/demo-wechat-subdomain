@@ -23,7 +23,7 @@ cc.Class({
                 _self.createUserBlock(userInfo);
             },
             fail: (res) => {
-                reject(res);
+                console.error(`wx.getUserInfo -> Failed: ${res}`);
             }
         });
         
